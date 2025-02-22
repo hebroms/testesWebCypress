@@ -6,6 +6,37 @@ Este projeto automatiza o envio de leads randomicos para veículos novos, utiliz
 - Node.js (v16+)
 - npm
 
+
+## 🏗️ Estrutura Atualizada do Projeto
+```bash
+
+/cypress
+|-- /e2e
+|   |-- /pages
+|   |   |-- /elements       # Seletores
+|   |   |   |-- HomeElements.js
+|   |   |   |-- ListagemElements.js
+|   |   |   |-- InternaElements.js
+|   |   |
+|   |   |-- /actions        # Ações
+|   |       |-- HomePage.js
+|   |       |-- ListagemPage.js
+|   |       |-- InternaPage.js
+|
+|-- /support
+|   |-- commands.js
+|   |-- e2e.js
+|
+# Configurações de ambientes
+|-- cypress.config.test.js
+|-- cypress.config.prod.js
+|-- cypress.config.hml.js
+|
+|-- cypress.config.js       # Config principal
+|-- package.json
+
+```
+
 ## 🚀 Como rodar o projeto
 
 1️⃣ **Clone o repositório:**

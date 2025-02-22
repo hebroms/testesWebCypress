@@ -18,6 +18,7 @@ module.exports = defineConfig({
   },
   e2e: {
     baseUrl: 'https://autoforce-academy.pilotodetestes.com.br/ddm-fiat-v2-dois/',
+    reporter: 'cypress-mochawesome-reporter',
     defaultCommandTimeout: 10000,
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on)

@@ -6,7 +6,7 @@ export default class Lead {
   constructor() {
     this.nome = faker.person.fullName();
     this.email = faker.internet.email();
-    this.telefone = faker.phone.number('(##) 9####-####');
+    this.telefone = faker.phone.number('##9########');
     this.cpf = this.#gerarCPF();
   }
 
